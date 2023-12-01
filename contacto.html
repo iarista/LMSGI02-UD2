@@ -1,0 +1,63 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head> 
+    <meta charset="utf-8">
+    <title>Películas Database</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+  <!-- Encabezado. Se usa posicionamiento absoluto -->
+  <header> 
+    <h1>Películas Database</h1>
+   
+    <img class="logo" src="img/logo.png" id="inicio"/>
+  </header>
+
+  <!-- Menú de navegación. Usa flexbox -->
+  <nav>
+    <ul class="navigation">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="noticias.html">Noticias</a></li>
+      <li><a href="peliculas.html">Películas</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- Bloque principal, Se usa float para la imagen e inline-block para los artículos -->
+  <main>
+
+    <section>
+      <h2>Contacto</h2>
+    <!-- Formulario de contacto -->
+    <form class="formulario" action="procesar_formulario" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="20" required></textarea>
+
+        <input type="submit" value="Enviar">
+    </form>
+ 
+    </section>
+      
+
+  </main> 
+
+  <!--Pie de página -->
+  <footer>
+    <p>Películas Database ©</p> 
+  </footer>
+
+  <!-- Bloque accesorio para ir al inicio. Se usa posicionamiento fixed -->
+  <aside>
+    <a href="#inicio"> <img class="fijado" src="img/flecha.png" /></a> 
+  </aside>
+</body>
+</html>
